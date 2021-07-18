@@ -15,25 +15,6 @@ knitr::opts_chunk$set(
 
 # emdash.rules
 
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of emdash.rules is to ...
-
-## Installation
-
-You can install the released version of emdash.rules from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("emdash.rules")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("asiripanich/emdash.rules")
-```
 ## Fit models using a Targets workflow
 
 ```{r}

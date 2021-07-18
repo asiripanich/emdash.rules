@@ -3,27 +3,6 @@
 
 # emdash.rules
 
-<!-- badges: start -->
-<!-- badges: end -->
-
-The goal of emdash.rules is to …
-
-## Installation
-
-You can install the released version of emdash.rules from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("emdash.rules")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("asiripanich/emdash.rules")
-```
-
 ## Fit models using a Targets workflow
 
 ``` r
@@ -57,14 +36,14 @@ tar_load(baked_model_data)
 ``` r
 head(baked_model_data)
 #> # A tibble: 6 x 7
-#>   android_i_os version_major version_minor version_patch last_communication_elapsed_time last_data_upload_elapsed_time status     
-#>   <fct>        <fct>         <fct>         <fct>                                   <dbl>                         <dbl> <fct>      
-#> 1 unknown      unknown       unknown       unknown                                -1                            -1     check token
-#> 2 android      10            0             0                                       0.716                         0.882 unknown    
-#> 3 ios          14            3             0                                       0.826                         0.874 unknown    
-#> 4 android      7             1             1                                       0.733                         0.899 unknown    
-#> 5 unknown      unknown       unknown       unknown                                -1                            -1     check token
-#> 6 unknown      unknown       unknown       unknown                                -1                            -1     check token
+#>   android_i_os version_major version_minor version_patch last_communication_elaps… last_data_upload_elaps… status  
+#>   <fct>        <fct>         <fct>         <fct>                             <dbl>                   <dbl> <fct>   
+#> 1 unknown      unknown       unknown       unknown                          -1                      -1     check t…
+#> 2 android      10            0             0                                 0.716                   0.882 unknown 
+#> 3 ios          14            3             0                                 0.826                   0.874 unknown 
+#> 4 android      7             1             1                                 0.733                   0.899 unknown 
+#> 5 unknown      unknown       unknown       unknown                          -1                      -1     check t…
+#> 6 unknown      unknown       unknown       unknown                          -1                      -1     check t…
 autoplot(my_tuned_workflows) + theme_light(base_family = "IBMPlexSans")
 ```
 
