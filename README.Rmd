@@ -1,0 +1,55 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# emdash.rules
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of emdash.rules is to ...
+
+## Installation
+
+You can install the released version of emdash.rules from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("emdash.rules")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("asiripanich/emdash.rules")
+```
+## Fit models using a Targets workflow
+
+```{r}
+library(targets)
+library(tidymodels)
+```
+```{r, message = FALSE}
+tar_make()
+tar_load(my_tuned_workflows)
+tar_load(baked_model_data)
+```
+
+![](man/figures/targets-workflow.png)
+
+```{r plot-metrics}
+head(baked_model_data)
+autoplot(my_tuned_workflows) + theme_light(base_family = "IBMPlexSans")
+```
+
